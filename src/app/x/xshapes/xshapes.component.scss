@@ -1,0 +1,63 @@
+.polygon {
+  float: left;
+  shape-outside: polygon(0 0, 0 300px, 200px 300px);
+  clip-path: polygon(0 0, 0 300px, 200px 300px);
+  height: 300px;
+  width: 300px;
+  background: linear-gradient(to top right, #86f7cc, #67d7f5);
+}
+
+.circle-half {
+  float: left;
+  height: 230px;
+  width: 230px;
+  shape-outside: circle(50% at 0 50%);
+  shape-margin: 1rem;
+  clip-path: circle(50% at 0 50%);
+  background: linear-gradient(to top right, rgb(255, 255, 255), #fd987d);
+}
+
+$round_corder_px: 8px;
+.inset-round {
+  float: left;
+  shape-outside: inset(15px round $round_corder_px);
+  clip-path: inset(20px round $round_corder_px);
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(#58c2ed, #1b85dc);
+}
+
+/* A Shape on each side of text */
+
+.left {
+  float: left;
+  shape-outside: polygon(0 0, 0 300px, 200px 300px);
+  clip-path: polygon(0 0, 0 300px, 200px 300px);
+  background: linear-gradient(to top right, #67d7f5, #86f7cc);
+  height: 300px;
+  width: 300px;
+}
+$right_width:500px;
+.right {
+  float: right;
+  shape-outside: polygon(200px 300px, 300px 300px, 300px 0, 0 0);
+  clip-path: polygon(200px 300px, 300px $right_width, 300px 0, 0 0);
+  background: linear-gradient(to bottom left, #67d7f5, #86f7cc);
+  height: 300px;
+  width: $right_width;
+}
+
+
+
+
+
+
+.polygon-2 {
+  float: left;
+  shape-outside: polygon(0 0, 0 500px, 200px 300px);
+  clip-path: polygon(0 0, 0 300px, 200px 300px);
+  height: 300px;
+  width: 300px;
+  background: linear-gradient(to top right, #86F7CC, #67D7F5);
+}
+

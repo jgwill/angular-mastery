@@ -1,0 +1,33 @@
+
+$x1:0;
+$y1:0;
+$x2:0;
+$y2:200px;
+$x3:100px;
+$y3:300px;
+
+.polygon-2 {
+   float: left;
+   shape-outside: polygon($x1 $y1,$x2 $y2,$x3 $y3, $x3+60 $y3+30);
+   clip-path: polygon($x1 $y1,$x2 $y2,$x3 $y3, $x3+30 $y3+15);
+   height: 300px;
+   width: 300px;
+   background: linear-gradient(to top right, #86F7CC, #67D7F5);
+ }
+
+
+
+
+
+
+
+.letter {
+   float: left;
+   font-size: 400px;
+   font-family: Georgia;
+   line-height: .8;
+   margin-top: 20px;
+   margin-right: 20px;
+   shape-outside: polygon(5px 14px, 233px 20px, 246px 133px, 189px 167px, 308px 304px, 0px 306px) content-box;
+   clip-path: polygon(5px 14px, 233px 20px, 246px 133px, 189px 167px, 308px 304px, 0px 306px);
+ }

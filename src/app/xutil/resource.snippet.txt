@@ -1,0 +1,7 @@
+{
+      icon:"perm_data_setting",
+      title:"TITLE",
+      subtitle:"SUBTITLE",
+      url:"URL",
+      note:"NOTES"
+    }

@@ -1,0 +1,38 @@
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.gender-group mat-radio-button {
+  margin-right: 15px;
+}
+
+/* //@urir https://angular.io/guide/forms#add-custom-css-for-visual-feedback
+  */
+.ng-valid[required],
+.ng-valid.required {
+  border-left: 5px solid #42a948; /* green */
+}
+
+.ng-invalid:not(form) {
+  border-left: 5px solid #a94442; /* red */
+}
+
+.btn {
+  min-height: 45px;
+}
+.btn-text {
+ 
+  font-size: 120%;
+  margin-left: 10px;
+  margin-right: 8px;
+}
+.btn-icons {
+  
+}
+ 

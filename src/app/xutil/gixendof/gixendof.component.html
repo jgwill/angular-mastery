@@ -1,0 +1,51 @@
+
+<div id="gixendof-wrapper" class="gixendof-container">
+<mat-card class="gixendof-card">
+  <mat-card-header>
+    <mat-card-title>
+      Goal : {{goal}}
+    </mat-card-title>
+    <mat-card-subtitle>
+      
+
+
+  <h6 *ngIf="state" [class]="'state-' + state">State: {{
+     state == "inprogress"?
+      "In Progress"
+      :
+      state == "completed"?
+      "Completed"
+      :
+      "In review"
+
+    }}</h6>
+
+    </mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+  <p class="card-actions">{{content}}</p>
+ 
+  <!--@cr If resources-->
+  <h3 *ngIf="resources">Resources:</h3>
+  <div fxLayout="row"  fxLayoutAlign="center start"  fxLayout.xs="column" fxFlexFill *ngIf="resources">
+    <div *ngFor="let r of resources"  >
+      
+      <!--@o Looping foreach Resources defined-->
+      <xresourcecard [resource]="r">
+        <!--Resource Card display resources-->
+      </xresourcecard>
+      
+    </div>
+  </div>
+  
+  </mat-card-content>
+  <mat-card-actions class="card-actions">
+   <a [href]="urlrepobase + path" target="_blank">{{path}}</a>
+  <!--@a Todo Add Link to Repo-->
+
+    
+  </mat-card-actions>
+</mat-card>
+
+
+</div>

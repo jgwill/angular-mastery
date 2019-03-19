@@ -1,0 +1,33 @@
+.state-reviewing,
+.state-inreview {
+  color: magenta;
+}
+
+.state-progressing,
+.state-inprogress {
+  color: blue;
+}
+
+.state-completed,
+.state-complete {
+  color: green;
+}
+.state-abandoned {
+  color: brown;
+}
+.state {
+  color: white;
+}
+
+.gixendof-container {
+  font-style: italic;
+  font-size: 80%;
+  background-color: #fffcff;
+}
+
+.gixendof-card {
+  max-width: 655px;
+}
+.card-actions {
+  margin-left: 25px;
+}
