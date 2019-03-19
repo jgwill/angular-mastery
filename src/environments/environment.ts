@@ -6,6 +6,7 @@ export const environment = {
   production: false,
   myval : "we are developping",
   noteapiurl: "http://jgwill.com/x/telm-api-cache/notes.json"
+  
 };
 
 /*
