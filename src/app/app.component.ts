@@ -9,6 +9,6 @@ import { environment } from '../environments/environment';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'xhostasgithubpages190309';
+  title = 'ngmastery';
   myval = environment.myval;
 }
