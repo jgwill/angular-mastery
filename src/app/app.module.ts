@@ -70,6 +70,8 @@ import { XresourcecardComponent } from './xutil/xresourcecard/xresourcecard.comp
 import { XshapingButtonsComponent } from './x/xshaping-buttons/xshaping-buttons.component';
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,

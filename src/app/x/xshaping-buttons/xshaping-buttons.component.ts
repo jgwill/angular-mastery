@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'xshaping-buttons',
   templateUrl: './xshaping-buttons.component.html',
