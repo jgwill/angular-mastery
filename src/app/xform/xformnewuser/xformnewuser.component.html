@@ -1,0 +1,108 @@
+<div #managingUser [hidden]="!managing">
+  Managing
+</div>
+
+<div #newFormWrapper [hidden]="submitted">
+  <h2>{{formTitle}}</h2>
+  <hr>
+  <form class="example-form" (ngSubmit)="onSubmit()" #patientForm="ngForm">
+
+
+    <!--@feature Doctor-->
+    <mat-form-field class="example-full-width">
+      <!--@feature Doctor Reference-->
+      <input matInput [placeholder]="doctorLabel" disabled value="Dr. Dumais">
+      <input type="hidden" id="did" [(ngModel)]="model.did" name="did">
+
+      <!-- ------------------- -->
+    </mat-form-field>
+    <!--@feature Name-->
+    <mat-form-field class="form-namefields example-full-width ">
+      <input #first matInput [placeholder]="firstLabel" id="first" required name="first" [(ngModel)]="model.first">
+    </mat-form-field>
+    <mat-form-field class="form-namefields example-full-width ">
+      <input matInput [placeholder]="lastLabel" id="last" required name="last" [(ngModel)]="model.last">
+    </mat-form-field>
+    <!-- ------------------- -->
+
+
+    <br>
+    <!--@feature Gender-->
+    <mat-radio-group class="example-full-width gender-group" [(ngModel)]="model.gender" name="gender" id="gender">
+
+      <mat-radio-button *ngFor="let gender of genders" [value]="gender">{{gender}}</mat-radio-button>
+
+    </mat-radio-group>
+    <!-- ------------------- -->
+
+    <br>
+
+    <br>
+    <!--@feature Birth-->
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker" [placeholder]="birthLabel" name="born" [(ngModel)]="model.born" id="born"
+        required (click)="picker.open()">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    &nbsp;&nbsp;{{ageLabel}}: {{ model.born| dt2age}}
+    <!-- ------------------- -->
+    <br>
+
+    <!--@feature EMAIL-->
+    <mat-form-field class="example-full-width">
+      <input matInput [placeholder]="emailLabel" id="email" name="email" [(ngModel)]="model.email" required>
+    </mat-form-field>
+
+
+    <!-- ------------------- -->
+
+
+
+    <br>
+    <button type="submit" class="btn btn-success btn-primary" [disabled]="!patientForm.form.valid">
+      <i class="material-icons btn-icons">
+        create_new_folder
+      </i>
+      <span class="btn-text">{{submitLabel}}</span>
+
+    </button>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="button" class="btn btn-default btn-secondary" (click)="newPatient()">
+      <i class="material-icons">
+        cancel
+      </i>
+      <span class="btn-text">{{newLabel}} </span>
+
+
+    </button>
+
+  </form>
+</div>
+
+
+<div [hidden]="!submitted">
+
+
+  <hr>
+  <h2>{{submittedLabel}}</h2>
+
+  {{model.gender}}<br>
+  {{ model.first }} {{model.last}} <br>
+  {{ model.email }}<br>
+
+  {{birthLabel}}:
+  {{ model.born | date: dtFormat}} <br>
+  {{ageLabel}}: {{ model.born| dt2age}}<br>
+
+  <br>
+  <button class="btn btn-primary" (click)="submitted=false">
+    <i class="material-icons">
+      border_color
+    </i> <span class="btn-text"> {{editLabel}}</span>
+
+
+
+
+  </button>
+</div>

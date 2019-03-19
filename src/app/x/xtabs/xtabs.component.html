@@ -1,0 +1,138 @@
+<mat-tab-group>
+<mat-tab label="Shaping">
+<app-xshaping-index></app-xshaping-index>
+</mat-tab>
+  <mat-tab label="Layouting">
+      <xlayoutingsimple></xlayoutingsimple>
+  </mat-tab>
+  <mat-tab label="Free SVG icons">
+
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Free SVG icons for popular brands</mat-card-title>
+        <mat-card-subtitle>Got a pretty great list here :</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+
+
+        <img height="32" width="32" src="https://unpkg.com/simple-icons@latest/icons/codeship.svg" />
+        
+
+        <sicon name="matternet"></sicon>
+        <sicon name="facebook"></sicon>
+        <sicon name="slack"></sicon>
+        <sicon name="codeship"></sicon>
+
+      </mat-card-content>
+      <mat-card-actions>
+        <a href="https://simpleicons.org/" target="_blank">
+          <button mat-button> Browse simple-icons list</button></a>
+      </mat-card-actions>
+    </mat-card>
+
+
+  </mat-tab>
+  <mat-tab label="REST">
+
+    <hr>Getting Notes from HTTP REST:<br>
+    <app-xnoteslist></app-xnoteslist>
+
+  </mat-tab>
+  <mat-tab label="Forms">
+
+    <xformnewuser></xformnewuser>
+    <hr>
+    Popout form to add user. step 1 a simple form.
+    <hr>
+
+    <hr>
+  </mat-tab>
+
+  <mat-tab label="Intro">
+    <hr>
+    Current Branch: FORM Popping out to add User.
+    <hr>
+
+    Navigate thru tabs <br>
+    * Material Animation <br>
+    * Material Table <br>
+    * Material List <br>
+
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="example-tab-icon">favorite</mat-icon>
+      HeartBeating
+    </ng-template>
+
+    <app-xanim-heartbeat></app-xanim-heartbeat>
+
+  </mat-tab>
+
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="example-tab-icon">move_to_inbox</mat-icon>
+      Animation Feedback
+    </ng-template>
+
+    <app-xanimrippling></app-xanimrippling>
+  </mat-tab>
+
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="example-tab-icon">list</mat-icon>
+      List
+    </ng-template>
+
+    <!--@Mastery List-->
+
+
+
+    <br>
+    src/app/x/xmylist/xmylist.component.html
+    <br>
+    <hr>
+    <h2>List</h2>
+    <!--@Mastery Material LIST-->
+    <button mat-icon-button>
+      <mat-icon>home</mat-icon>
+    </button>
+    <hr>
+    <mat-list>
+      <h3 mat-subheader>Folders</h3>
+      <mat-list-item *ngFor="let folder of folders">
+        <mat-icon mat-list-icon>{{folder.icon}}</mat-icon>
+        <h4 mat-line>{{folder.name}}</h4>
+        <p mat-line> {{folder.updated | date}} </p>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <h3 mat-subheader>Notes</h3>
+      <mat-list-item *ngFor="let note of notes">
+        <mat-icon mat-list-icon>{{note.icon}}</mat-icon>
+        <h4 mat-line>{{note.name}}</h4>
+        <p mat-line> {{note.updated | date}} </p>
+      </mat-list-item>
+    </mat-list>
+
+
+
+
+  </mat-tab>
+
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="example-tab-icon">favorite</mat-icon>
+      Icons I Love
+    </ng-template>
+
+
+    <hr>
+    <app-xmdiconlist></app-xmdiconlist>
+
+
+
+  </mat-tab>
+</mat-tab-group>
+
+
+<gixendof goal="Mastery Angular/Material/Tabs" path="src/app/x/xtabs/xtabs.component.html" state="completed"></gixendof>

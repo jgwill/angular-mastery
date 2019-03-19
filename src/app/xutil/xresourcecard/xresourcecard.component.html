@@ -1,0 +1,29 @@
+ 
+<mat-card class="resource-card">
+  <mat-card-header>
+    <mat-card-title>
+      <mat-icon *ngIf="resource.icon">{{resource.icon}}</mat-icon>
+      {{resource.title}}
+    </mat-card-title>
+    <mat-card-subtitle>{{resource.subtitle}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p class="resource-note"> 
+  {{resource.note}}
+</p>
+  </mat-card-content>
+  <mat-card-actions>
+ 
+    <a [href]="resource.url" target="_blank" [title]="resource.title">
+        <button mat-mini-fab class="button-text">
+           <div fxLayout="row"  fxLayoutAlign="center start">
+             <div   > <mat-icon class="mat-icon-link">link</mat-icon>             </div>
+             <div   > Open       </div>
+             <div   > <mat-icon class="mat-icon-link">link</mat-icon>             </div>
+            </div>
+          </button>
+          
+ 
+    </a>
+  </mat-card-actions>
+</mat-card>

@@ -1,0 +1,32 @@
+<p>
+  xanim-heartbeat follows the value in the database
+</p>
+<nav>
+  <button (click)="toggle()" class="material-icons">autorenew</button>
+  <button (click)="bad()" class="material-icons">highlight_off</button>
+</nav>
+<table>
+  <tr>
+    <td>
+      <div class="box">
+        
+        <i [@slideStatus]="status" class="material-icons">{{ status == 'active' ? 'favorite' : 'favorite' }}</i>
+      </div>
+    </td>
+    <td>86</td>
+  </tr>
+</table>
+
+<br>
+<hr><br>
+<a href="https://angular.io/guide/animations" target="_blank">Material Design angular animations</a>
+
+<!--@urir https://material.io/tools/icons/?icon=favorite_border&style=baseline-->
+<!-- 
+<i class="material-icons">
+  favorite
+</i>
+
+<i class="material-icons">
+  favorite_border
+</i> -->

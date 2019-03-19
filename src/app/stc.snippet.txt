@@ -1,0 +1,8 @@
+
+  stc = {
+    goal: "",
+    path: "RELPATH",
+    state: "progressing",
+    content: "CONTENT",
+    resources: []
+  };

@@ -1,0 +1,15 @@
+
+    <button mat-icon-button [matMenuTriggerFor]="menu" class="sidemenu-button-toggler">
+        <mat-icon >more_vert</mat-icon>
+      </button>
+      
+      <mat-menu #menu="matMenu" >
+          <button mat-menu-item *ngFor="let r of resources" class="sidemenu">
+            <a [href]="r.url" target="_blank">
+
+              <mat-icon>{{r.icon}}</mat-icon>
+              <span>{{r.title}}</span>
+            </a>
+          </button>
+          
+        </mat-menu>

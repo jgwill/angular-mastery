@@ -1,0 +1,26 @@
+.mat-list-icon {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+table {
+  width: 100%;
+}
+.tblresource {
+    width: 100%;
+  }
+@media screen and (min-width: 555px) {
+  .tblresource {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 955px) {
+  .tblresource {
+    width: 100%;
+  }
+}
+.notecell {
+  padding-left: 3pc;
+}
+.coltitle {
+  padding-left: 1pc;
+}
