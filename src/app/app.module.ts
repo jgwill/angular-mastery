@@ -73,6 +73,7 @@ import { XshapingButtonsComponent } from './x/xshaping-buttons/xshaping-buttons.
 
 //@stcgoal Listen to screen size changes
 import {LayoutModule} from '@angular/cdk/layout';
+import { XlayoutchangesComponent } from './x/xlayoutchanges/xlayoutchanges.component';
 
 
 @NgModule({
@@ -100,7 +101,8 @@ import {LayoutModule} from '@angular/cdk/layout';
     XflexlayoutComponent,
     XlayoutingsimpleComponent,
     XresourcecardComponent,
-    XshapingButtonsComponent
+    XshapingButtonsComponent,
+    XlayoutchangesComponent
   ],
   imports: [
    LayoutModule,
