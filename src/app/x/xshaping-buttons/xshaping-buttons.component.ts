@@ -25,8 +25,8 @@ export class XshapingButtonsComponent implements OnInit {
       },
       {
             icon:"favorite",
-            title:"Material Design Icons Buttons",
-            subtitle:"Floating Action Button analyzed",
+            title:"Material Design Floating Action Button",
+            subtitle:"FAB button analyzed and looking great",
             url:"http://guillaumeisabelle.com/r/mastery/shaping/buttons/190323",
 	    note:"Floating action buttons represents the primary action in an application. Only one floating action button is recommended per screen to represent the most common action."
           }
