@@ -33,6 +33,7 @@
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
     "@material/fab": "^1.0.1",
+    "@material/ripple": "^1.0.1",
     "core-js": "^2.5.4",
     "gix-angular-pipes": "^9.0.9",
     "hammerjs": "^2.0.8",
