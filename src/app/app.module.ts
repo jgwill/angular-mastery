@@ -76,6 +76,10 @@ import {LayoutModule} from '@angular/cdk/layout';
 import { XlayoutchangesComponent } from './x/xlayoutchanges/xlayoutchanges.component';
 import { XFloatingActionButtonComponent } from './xbutton/x-floating-action-button/x-floating-action-button.component';
 
+//@urir https://material.angular.io/components/button/api
+//@stcgoal Trying to create the nice button
+//@stcIssue : Button dont render with Material design
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -118,7 +122,8 @@ import { XFloatingActionButtonComponent } from './xbutton/x-floating-action-butt
     //--------------
     MatInputModule,//,FormControl, FormGroupDirective, NgForm, Validators,    ErrorStateMatcher
     HttpClientModule
-    ,FlexLayoutModule
+    ,FlexLayoutModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
