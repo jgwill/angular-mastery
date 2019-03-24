@@ -79,7 +79,7 @@ export class XresourcesComponent implements OnInit {
     },
     {
       title: "GITHUB Repo",
-      url: "https://github.com/jgwill/x-host-as-github-page-190309/"
+      url: "https://github.com/jgwill/ngmastery/"
       ,
       note: "repo"
     }

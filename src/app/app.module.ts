@@ -74,7 +74,14 @@ import { XshapingButtonsComponent } from './x/xshaping-buttons/xshaping-buttons.
 //@stcgoal Listen to screen size changes
 import {LayoutModule} from '@angular/cdk/layout';
 import { XlayoutchangesComponent } from './x/xlayoutchanges/xlayoutchanges.component';
+import { XFloatingActionButtonComponent } from './xbutton/x-floating-action-button/x-floating-action-button.component';
 
+//@urir https://material.angular.io/components/button/api
+//@stcgoal Trying to create the nice button
+//@stcIssue : Button dont render with Material design
+import {MatButtonModule} from '@angular/material/button';
+import { GixButtonCornectoComponent } from './gix/gix-button-cornecto/gix-button-cornecto.component';
+import { GixButtonTwolcornComponent } from './gix/gix-button-twolcorn/gix-button-twolcorn.component';
 
 @NgModule({
   declarations: [
@@ -102,7 +109,10 @@ import { XlayoutchangesComponent } from './x/xlayoutchanges/xlayoutchanges.compo
     XlayoutingsimpleComponent,
     XresourcecardComponent,
     XshapingButtonsComponent,
-    XlayoutchangesComponent
+    XlayoutchangesComponent,
+    XFloatingActionButtonComponent,
+    GixButtonCornectoComponent,
+    GixButtonTwolcornComponent
   ],
   imports: [
    LayoutModule,
@@ -116,7 +126,8 @@ import { XlayoutchangesComponent } from './x/xlayoutchanges/xlayoutchanges.compo
     //--------------
     MatInputModule,//,FormControl, FormGroupDirective, NgForm, Validators,    ErrorStateMatcher
     HttpClientModule
-    ,FlexLayoutModule
+    ,FlexLayoutModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
