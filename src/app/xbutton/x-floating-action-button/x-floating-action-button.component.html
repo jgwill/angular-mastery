@@ -1,65 +1,109 @@
-<button class="mdc-fab" aria-label="Favorite">
-  <span class="mdc-fab__icon material-icons">favorite</span>
-</button>
+<mat-tab-group>
+  <mat-tab label="Resulting GIXComponent">
+    <br>
+    <!--@Result Component gix-button-cornecto -->
 
-<hr>
-<h3>Goal: Make this button shaped like the Corner rectangle with an Icon + Create a Component for that button type:</h3><br>
+    <!--@a @Input Text, IconName-->
+    <!--@feature Component GixCorneto button-->
+    <gix-button-cornecto></gix-button-cornecto>
+    <gix-button-cornecto txt="edit" icon="edit"></gix-button-cornecto>
+    <gix-button-cornecto txt="delete" icon="delete"></gix-button-cornecto>
+    <gix-button-cornecto txt="search" icon="search"></gix-button-cornecto>
+    <gix-button-cornecto txt="Do you adjust yourself automatically" icon="search"></gix-button-cornecto>
+    <br><br><hr>
+    <!--@feature Component TwoCornButton-->
+    <br><br>
 
-<button mat-raised-button color="primary"  class="gix-button-shadow gix-corner-rectangle-button">  
-    <mat-icon>add</mat-icon> 
-     <span class="gix-button-corner-rectangle-label">Create</span>
-</button>
+    <gix-button-twolcorn txt=""></gix-button-twolcorn>
+    <gix-button-twolcorn icon="search"></gix-button-twolcorn>
+    <gix-button-twolcorn icon="delete"></gix-button-twolcorn>
+    <gix-button-twolcorn icon="edit" txt="oeuoeuoeu"></gix-button-twolcorn>
 
-<br><br>
-.gix-button-corner-rectangle-label
-<br><br>
-<button mat-raised-button color="primary"  class="gix-button-shadow gix-corner-rectangle-button">
+
+<br>
+
+  </mat-tab>
+  <mat-tab label="buttons Experimentation Archived ">
+
+<div>
+
   
-    <mat-icon>add</mat-icon> 
-     <span  >Create</span>
-</button>
-<br><br><br>
+  <button class="mdc-fab" aria-label="Favorite">
+      <span class="mdc-fab__icon material-icons">favorite</span>
+    </button>
 
-<hr><br><br><br>
-<button mat-raised-button color="primary"  class="ORIGINAL_NO_EFFECT_TO_OBSERVE_CONTRAST">
-  
-    <mat-icon>add</mat-icon>
-    <span>Create</span>
-  
-</button>
-<br><br>
-<br><br>
-<hr>
-<!--@feature gix-button-twolcorner-->
-<h5> A Nice rouded only at two corner and sharp at the other FAB</h5>
-<h6>CSS CLASS: gix-button-twolcorner</h6>
-<button mat-fab color="primary" class="gix-button-twolcorner">
-  <mat-icon>add</mat-icon>
-</button>
-<hr>
-<br><br>
- 
-<button mat-fab color="primary">
-  <mat-icon>add</mat-icon>
-</button>
-<br><br>
+    <hr>
+    <h3>Goal: Make this button shaped like the Corner rectangle with an Icon + Create a Component for that button type:
+    </h3><br>
+    
+    <button mat-raised-button color="primary" class="gix-button-shadow gix-corner-rectangle-button">
+      <mat-icon>add</mat-icon>
+      <span class="gix-button-corner-rectangle-label">Create</span>
+    </button>
+    
+    <br><br>
+    .gix-button-corner-rectangle-label
+    <br><br>
+    <button mat-raised-button color="primary" class="gix-button-shadow gix-corner-rectangle-button">
+      
+      <mat-icon>add</mat-icon>
+      <span>Create</span>
+    </button>
+    <br><br><br>
+    
+    <hr><br><br><br>
+    <button mat-raised-button color="primary" class="ORIGINAL_NO_EFFECT_TO_OBSERVE_CONTRAST">
+      
+      <mat-icon>add</mat-icon>
+      <span>Create</span>
+      
+    </button>
+    <br><br>
+    <br><br>
+    <hr>
+    <!--@feature gix-button-twolcorner-->
+    <h5> A Nice rouded only at two corner and sharp at the other FAB</h5>
+    <h6>CSS CLASS: gix-button-twolcorner</h6>
+    <button mat-fab color="primary" class="gix-button-twolcorner">
+      <mat-icon>add</mat-icon>
+    </button>
+    <hr>
+    <br><br>
+    
+    <button mat-fab color="primary">
+      <mat-icon>add</mat-icon>
+    </button>
+    <br><br>
+    
+    <hr>
 
-<hr>
+    <hr>
+    <br><br>
+    <br><br>
+    <hr>
+    <hr>
+    <h3>Fab Buttons</h3>
+    <div class="example-button-row">
+      <button mat-fab>Basic</button>
+      <button mat-fab color="primary">Primary</button>
+      <button mat-fab color="accent">Accent</button>
+      <button mat-fab color="warn">Warn</button>
+      <button mat-fab disabled>Disabled</button>
+      <button mat-fab>
+        <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+      </button>
+      <a mat-fab routerLink=".">Link</a>
+      
+    </div>
+  </div>
+  </mat-tab>
+</mat-tab-group>
 
-<hr>
-<br><br>
-<br><br>
-<hr>
-<hr>
-<h3>Fab Buttons</h3>
-<div class="example-button-row">
-  <button mat-fab>Basic</button>
-  <button mat-fab color="primary">Primary</button>
-  <button mat-fab color="accent">Accent</button>
-  <button mat-fab color="warn">Warn</button>
-  <button mat-fab disabled>Disabled</button>
-  <button mat-fab>
-    <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
-  </button>
-  <a mat-fab routerLink=".">Link</a>
-</div>
+
+<hr><hr>
+
+
+
+
+<gixendof [goal]="stc.goal" [path]="stc.path" [state]="stc.state" [content]="stc.content" [resources]="stc.resources"></gixendof>
+
