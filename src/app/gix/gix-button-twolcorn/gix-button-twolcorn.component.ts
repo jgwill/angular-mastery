@@ -15,22 +15,20 @@ export class GixButtonTwolcornComponent implements OnInit {
 
   @Input() icon?: string;
 
+  @Input() color?:string;
+
+
   constructor() {
     //default value for buttons/icon
     if (!this.txt)
       this.txt = "";
     if (!this.icon) this.icon = "add";
+    if (!this.color)this.color = "primary";
   }
 
   ngOnInit() {
 
-    let textFactor = 16; //factor to create the lenght
-
-    if (this.txt)
-
-      console.log("style.width: " + this.gitTwoCornButtonLabel.nativeElement.style.width);
-      
-    console.log("txtLenght:" + this.txt.length);
+    let textFactor = 17; //factor to create the lenght
 
     if (this.txt) {
       let newLenght = this.txt.length * textFactor;

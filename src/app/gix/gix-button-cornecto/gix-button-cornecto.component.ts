@@ -7,16 +7,23 @@ import { Component, OnInit,Input } from '@angular/core';
 })
 export class GixButtonCornectoComponent implements OnInit {
  
+
+
   @Input() txt?: string;
   //@STCGoal It Increases its Width according to the Text Input ; STATE: germinating
 
   @Input() icon?: string;
+
+
+  @Input() color?:string;
 
   constructor() {
     //default value for buttons/icon
     if (!this.txt)
       this.txt = "create";
     if (!this.icon) this.icon = "add";
+
+    if (!this.color)this.color = "primary";
   }
 
   ngOnInit() {
