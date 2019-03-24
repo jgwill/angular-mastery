@@ -3,7 +3,7 @@ import { Component, OnInit,Input } from '@angular/core';
 @Component({
   selector: 'gix-button-cornecto',
   templateUrl: './gix-button-cornecto.component.html',
-  styleUrls: ['./gix-button-cornecto.component.scss']
+  styleUrls: ['./gix-button-cornecto.component.css']
 })
 export class GixButtonCornectoComponent implements OnInit {
  

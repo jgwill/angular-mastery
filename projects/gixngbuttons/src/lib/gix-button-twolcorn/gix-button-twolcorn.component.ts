@@ -3,7 +3,7 @@ import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 @Component({
   selector: 'gix-button-twolcorn',
   templateUrl: './gix-button-twolcorn.component.html',
-  styleUrls: ['./gix-button-twolcorn.component.scss']
+  styleUrls: ['./gix-button-twolcorn.component.css']
 })
 export class GixButtonTwolcornComponent implements OnInit {
 

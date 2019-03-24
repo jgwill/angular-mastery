@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "gixngbuttons": [
+        "dist/gixngbuttons"
+      ],
+      "gixngbuttons/*": [
+        "dist/gixngbuttons/*"
+      ]
+    }
   }
 }
