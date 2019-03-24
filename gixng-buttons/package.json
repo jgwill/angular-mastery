@@ -1,0 +1,24 @@
+{
+  "name": "gixng-buttons",
+  "version": "0.0.1",
+  "description": "Buttons with shapes and colors I love",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgwill/ngmastery.git"
+  },
+  "keywords": [
+    "gix",
+    "angular",
+    "button"
+  ],
+  "author": "Guillaume Isabelle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jgwill/ngmastery/issues"
+  },
+  "homepage": "https://github.com/jgwill/ngmastery#readme"
+}
