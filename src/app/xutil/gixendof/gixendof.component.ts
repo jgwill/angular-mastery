@@ -2,6 +2,8 @@ import { Component, OnInit, Input } from '@angular/core';
 
 import {Resource} from "../../resource";
 
+import {environment} from "../../../environments/environment";
+
 
 export class StateClass {
   outstring: string;
@@ -15,7 +17,9 @@ export class StateClass {
 })
 export class GixendofComponent implements OnInit {
 
-  urlrepobase= "https://github.com/jgwill/x-host-as-github-page-190309/blob/master/";
+  urlrepobase= environment.repoUrlBase;
+  
+  //"https://github.com/jgwill/x-host-as-github-page-190309/blob/master/";
   
   @Input() goal: string;
   @Input() path: string;
