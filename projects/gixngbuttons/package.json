@@ -1,7 +1,10 @@
 {
   "name": "gixngbuttons",
-  "version": "0.1.6",
+  "version": "0.2.1",
   "description": "Buttons with shapes and colors I love",
+  "scripts": {
+    "build": "npm version patch && ng build GIXNGButtons"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jgwill/ngmastery.git"

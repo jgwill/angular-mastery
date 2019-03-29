@@ -18,6 +18,6 @@ import { GixButtonTwolcornComponent } from './gix-button-twolcorn/gix-button-two
     MatRippleModule,
     MatButtonModule
   ],
-  exports: [GixButtonCornectoComponent,GixButtonTwolcornComponent]
+  exports: [GixButtonCornectoComponent,GixButtonTwolcornComponent,MatButtonModule]
 })
 export class GIXNGButtonsModule { }

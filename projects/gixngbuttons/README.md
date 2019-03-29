@@ -1,9 +1,18 @@
 # GIXNGButtons
 
+## Install
+```bash
+ng add @angular/material
+npm i gixng-buttons --save
+yarn add gixng-buttons --save
+```
+
 ## app.module.ts
  ```html
 
+import {MatNativeDateModule, MatButtonModule } from '@angular/material';
 import {GixButtonCornectoComponent, GixButtonTwolcornComponent} from 'node_modules/gixng-buttons';
+
 ```
  
  ```html
