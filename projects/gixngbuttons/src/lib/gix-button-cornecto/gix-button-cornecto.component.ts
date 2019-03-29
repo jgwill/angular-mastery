@@ -15,7 +15,7 @@ export class GixButtonCornectoComponent implements OnInit {
   @Input() icon?: string;
 
 
-  @Input() color?:string;
+   @Input() color?:string;
 
   constructor() {
     //default value for buttons/icon

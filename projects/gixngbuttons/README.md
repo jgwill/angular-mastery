@@ -1,5 +1,22 @@
 # GIXNGButtons
 
+## app.module.ts
+ ```html
+
+import {GixButtonCornectoComponent, GixButtonTwolcornComponent} from 'node_modules/gixng-buttons';
+```
+ 
+ ```html
+
+<gix-button-cornecto txt="Dashboard" icon="dashboard" routerLink="/dashboard"  >    
+</gix-button-cornecto>
+                 
+```
+
+
+---
+---
+
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.0.
 
 ## Code scaffolding

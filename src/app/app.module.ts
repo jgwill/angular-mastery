@@ -80,8 +80,9 @@ import { XFloatingActionButtonComponent } from './xbutton/x-floating-action-butt
 //@stcgoal Trying to create the nice button
 //@stcIssue : Button dont render with Material design
 import {MatButtonModule} from '@angular/material/button';
-import { GixButtonCornectoComponent } from './gix/gix-button-cornecto/gix-button-cornecto.component';
-import { GixButtonTwolcornComponent } from './gix/gix-button-twolcorn/gix-button-twolcorn.component';
+import { GixButtonCornectoComponent, GixButtonTwolcornComponent } from 'projects/gixngbuttons/src/gixng-buttons';
+// import { GixButtonCornectoComponent } from './gix/gix-button-cornecto/gix-button-cornecto.component';
+// import { GixButtonTwolcornComponent } from './gix/gix-button-twolcorn/gix-button-twolcorn.component';
 
 @NgModule({
   declarations: [
