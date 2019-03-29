@@ -11,11 +11,12 @@ export class GixButtonTwolcornComponent implements OnInit {
   @ViewChild("gitTwoCornButtonLabel", { read: ElementRef }) gitTwoCornButtonLabel: ElementRef;
 
   @Input() txt?: string;
+
   //@STCGoal It Increases its Width according to the Text Input ; STATE: germinating
 
   @Input() icon?: string;
 
-  @Input() color?:string;
+  //@Input() color?:string;
 
 
   constructor() {
@@ -23,7 +24,7 @@ export class GixButtonTwolcornComponent implements OnInit {
     if (!this.txt)
       this.txt = "";
     if (!this.icon) this.icon = "add";
-    if (!this.color)this.color = "primary";
+    //if (!this.color)this.color = "primary";
   }
 
   ngOnInit() {
